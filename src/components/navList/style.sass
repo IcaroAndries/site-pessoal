@@ -1,0 +1,41 @@
+@use '../../config/variables'
+
+nav
+    display: flex
+    justify-content: space-around
+    align-items: center    
+
+ul
+    display: flex
+    list-style: none
+    height: auto
+
+    li
+        display: flex
+        align-items: center
+        letter-spacing: 3px
+        margin-left: 1em
+        margin-right: 1em
+        font-size: 1.4em
+
+a
+    color: #551a8b
+    position: relative
+    font-family: variables.$nav-fonts
+    text-decoration: none
+
+a:after 
+    content: ""
+    position: absolute
+    background-color: #551a8b
+    height: 2px
+    width: 0%
+    left: 0px
+    bottom: -5px
+    transition: 0.3s
+
+a:hover
+    opacity: 80%
+
+a:hover:after
+    width: 100%
