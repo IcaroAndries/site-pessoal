@@ -1,16 +1,13 @@
 
 import './App.sass'
-import { Header, Main } from './components'
+import { Header, Hero } from './components'
 
 function App() {
 
   return (
     <div className='root-container'>
       <Header />      
-      <div className='main-container'>
-        <Main />
-      </div>
-      
+      <Hero />
     </div>
   )
 }

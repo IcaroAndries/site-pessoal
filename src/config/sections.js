@@ -8,10 +8,6 @@ const sections = [
         ref: "#about"
     },
     {
-        title: "Projects",
-        ref: "#proj"
-    },
-    {
         title: "Hire",
         ref: "#hire"
     }
