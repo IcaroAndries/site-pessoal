@@ -6,7 +6,7 @@ function About() {
     <div className='about'>
         <div className='box'>
             <p>
-                entrou
+                resumo sobre mim
             </p>
         </div>
     </div>
