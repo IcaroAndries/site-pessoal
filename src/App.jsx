@@ -1,6 +1,6 @@
 
 import './App.sass'
-import { Header, Hero } from './components'
+import { Header, Hero, About } from './components'
 
 function App() {
 
@@ -8,6 +8,7 @@ function App() {
     <div className='root-container'>
       <Header />      
       <Hero />
+      <About />
     </div>
   )
 }

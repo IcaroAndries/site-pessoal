@@ -13,3 +13,22 @@
 h1
     color: #f1f1f1
     font-family: variables.$main-font
+    font-size: 2.5em
+
+.neon
+    animation: neon 2s alternate infinite
+
+
+@keyframes neon
+    0%
+        color: #fff
+        text-shadow: 0 0 7px #551a8b, 0 0 10px #fff, 0 0 21px #fff
+
+    50%
+        color: #fff
+        text-shadow: 0 0 7px #fff, 0 0 10px #551a8b, 0 0 21px #fff
+      
+    100%
+        color: #fff
+        text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #551a8b
+       
