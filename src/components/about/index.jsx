@@ -1,6 +1,7 @@
 import React from 'react'
 import './style.sass'
 import { Typewriter } from 'react-simple-typewriter'
+import img from '../../imgs/eu.jpg'
 
 function About() {
 
@@ -29,7 +30,7 @@ function About() {
                 </p>
               </div>
 
-              <img src="../../../public/imgs/eu.jpg" alt="eu mesmo" />
+              <img src={img} alt="eu mesmo" />
 
             </div>
         </div>
