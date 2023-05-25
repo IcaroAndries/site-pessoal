@@ -9,13 +9,20 @@ function Footer() {
 
   const [email, setEmail] = useState('icaro.andries15@gmail.com');
 
-  window.addEventListener('resize', () => {
+  const eventHandler = () => {
     if(window.outerWidth < 410) {
       setEmail('gmail')
     } else{
       setEmail('icaro.andries15@gmail.com')
     }
+  }
+
+  window.addEventListener('load', () => {
+    if(window.innerWidth < 410 && email != 'gmail'){
+      setEmail('gmail')
+    }
   })
+  window.addEventListener('resize', eventHandler)
 
 
   return (

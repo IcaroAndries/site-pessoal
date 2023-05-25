@@ -23,7 +23,7 @@ function About() {
                   <Typewriter words={[text]}
                     cursor
                     cursorStyle='_'
-                    typeSpeed={70}
+                    typeSpeed={25}
                     deleteSpeed={50}
                     delaySpeed={1000}
                   />
