@@ -8,6 +8,7 @@
     flex-direction: column
     justify-content: center
     align-items: center
+    border-bottom: 2px solid variables.$border-color
     
 
 h1
@@ -32,3 +33,9 @@ h1
         color: #fff
         text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px variables.$border-color
        
+@media (width < 450px)
+    .hero
+        height: 80vh
+
+    h1
+        font-size: 1.5em

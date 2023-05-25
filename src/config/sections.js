@@ -4,12 +4,12 @@ const sections = [
         ref: "#home"
     },
     {
-        title: "About Me",
+        title: "About",
         ref: "#about"
     },
     {
-        title: "Hire",
-        ref: "#hire"
+        title: "Contact",
+        ref: "#contact"
     }
 ]
 

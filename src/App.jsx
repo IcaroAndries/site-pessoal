@@ -1,6 +1,6 @@
 
 import './App.sass'
-import { Header, Hero, About } from './components'
+import { Header, Hero, About, Footer } from './components'
 
 function App() {
 
@@ -9,6 +9,7 @@ function App() {
       <Header />      
       <Hero />
       <About />
+      <Footer />
     </div>
   )
 }

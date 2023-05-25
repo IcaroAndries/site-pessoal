@@ -1,0 +1,29 @@
+@use '../../config/variables'
+
+.footer
+    height: 40vh
+    font-family: variables.$main-font
+    display: flex
+    flex-direction: row
+    justify-content: space-around
+    align-items: center
+
+    .vibe
+        color: variables.$border-color
+        font-size: 1.5em
+
+    ul
+        display: flex
+        flex-direction: row
+
+        li
+            padding: 0.5em
+            letter-spacing: 0.1em
+            a
+                color: variables.$border-color
+                font-size: 0.9em
+    
+@media (width < 900px)
+    .footer
+        ul
+            flex-direction: column !important

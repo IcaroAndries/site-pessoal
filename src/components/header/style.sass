@@ -1,3 +1,5 @@
+@use '../../config/variables'
+
 .header
     display: flex
     justify-content: space-around
@@ -13,5 +15,5 @@
     height: 3.5em
     transition: 0.3s
     background-color: #010101
-    border-bottom: 2px solid #551a8b
-    box-shadow: 0 2px 3px 0 #551a8b
+    border-bottom: 2px solid variables.$border-color
+    box-shadow: 0 2px 3px 0 variables.$border-color
