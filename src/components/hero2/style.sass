@@ -1,0 +1,78 @@
+@use '../../config/variables'
+
+.hero2
+    background-image: url('../../imgs/bghero.jpg')
+    background-size: cover
+    height: 100vh
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    border-bottom: 2px solid variables.$border-color    
+
+.box
+    margin-top: -5em
+    width: 80%
+    padding-top: 3em
+    padding-bottom: 4em
+    display: flex
+    flex-direction: column
+    justify-content: start
+    align-items: center
+    border: 0.15em solid variables.$border-color
+    background: #010101
+    animation: neon-box 0.7s alternate infinite
+    color: #fff
+    font-family: variables.$main-font
+
+    .descricao
+        padding-top: 4em
+        padding-bottom: 2em
+        display: flex
+        flex-direction: row
+        justify-content: space-around
+        align-items: start
+        width: 90%
+
+        .texto
+            display: flex
+            flex-direction: column
+            font-family: variables.$main-font
+            max-width: 40%
+
+            p
+                padding-bottom: 0.7em
+                font-size: 1.5em
+
+            h2
+                padding-bottom: 0.7em
+                font-size: 2em
+
+        img
+            max-height: 30vh
+            border-radius: 100%
+            border: 0.2em solid variables.$border-color
+            filter: drop-shadow(0 0 0.5em variables.$border-color)
+
+@keyframes neon-box
+    0%
+        box-shadow: 0 0 6px variables.$border-color
+      
+    50%
+        box-shadow: 0 0 10px variables.$border-color
+
+    100%
+        box-shadow: 0 0 14px variables.$border-color
+
+@media (width < 800px)
+    .descricao
+        flex-direction: column-reverse !important
+        justify-content: start !important
+        align-items: center !important
+
+        img
+            max-height: 20vh !important
+
+        .texto
+            padding-top: 3em
+            max-width: 100% !important

@@ -1,16 +1,15 @@
-
-import './App.sass'
-import { Header, Hero, About, Footer } from './components'
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Home, Princesa } from './pages';
 
 function App() {
 
   return (
-    <div className='root-container'>
-      <Header />      
-      <Hero />
-      <About />
-      <Footer />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/princesa" element={<Princesa />} />
+      </Routes>
+    </BrowserRouter>
   )
 }
 
